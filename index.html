@@ -20,11 +20,29 @@
       body {
         background-color: #f2f4f6;
       }
+
+      .star::after {
+        content: '*';
+        color: red;
+        margin-left: 5px;
+      }
     </style>
   </head>
   <body>
     <div class="container py-3">
-      <h3>Ekran nr 1</h3>
+      <div class="d-flex align-items-center py-2 gap-2">
+        <h3 class="mb-0">Ekran nr 1</h3>
+        <div
+          class="d-flex align-items-center gap-2 px-2 border-start border-secondary"
+        >
+          <img src="Icons/home.svg" alt="home" />
+          <img src="Icons/arrow.svg" alt="chevron-right" />
+          <span class="text-primary">Start</span>
+          <img src="Icons/arrow.svg" alt="chevron-right" />
+          <span class="text-secondary">Ekran nr 1</span>
+        </div>
+      </div>
+
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <button
@@ -285,7 +303,7 @@
 
                   <div class="col-md-4">
                     <div class="form-group py-2">
-                      <label class="mb-1" for="input1">Tekst</label>
+                      <label class="mb-1 star" for="input1">Tekst</label>
                       <input
                         type="text"
                         class="form-control"
@@ -387,102 +405,101 @@
                   />
                 </div>
               </div>
-              <div class="table-responsive py-2">
-                <div class="table-responsive">
-                  <table class="table">
-                    <thead>
-                      <tr class="table-light">
-                        <th>ID</th>
-                        <th>KLIENT</th>
-                        <th>DATA OD</th>
-                        <th>DATA DO</th>
-                        <th>UŻYTKOWNIK</th>
-                        <th>ETAP</th>
-                        <th>POSTĘP</th>
-                        <th>BŁĄD</th>
-                        <th></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>12</td>
-                        <td>Klient 1</td>
-                        <td>05-09-2022 17:28</td>
-                        <td>05-09-2022 17:32</td>
-                        <td>Jan Kowalski</td>
-                        <td>4/4</td>
-                        <td>100%</td>
-                        <td>Nie</td>
-                        <td>
-                          <button
-                            type="button"
-                            class="btn text-primary btn-sm px-1 py-0"
-                          >
-                            <img src="Icons/download.svg" />
-                            Pobierz
-                          </button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>123</td>
-                        <td>Klient 4</td>
-                        <td>05-09-2022 17:28</td>
-                        <td>05-09-2022 17:32</td>
-                        <td>Krystian Nowak</td>
-                        <td>3/3</td>
-                        <td>100%</td>
-                        <td>Nie</td>
-                        <td>
-                          <button
-                            type="button"
-                            class="btn text-primary btn-sm px-1 py-0"
-                          >
-                            <img src="Icons/download.svg" />
-                            Pobierz
-                          </button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>1234</td>
-                        <td>Klient 3</td>
-                        <td>05-09-2022 17:28</td>
-                        <td>05-09-2022 17:32</td>
-                        <td>Administrator</td>
-                        <td>4/4</td>
-                        <td>100%</td>
-                        <td>Nie</td>
-                        <td>
-                          <button
-                            type="button"
-                            class="btn text-primary btn-sm px-1 py-0"
-                          >
-                            <img src="Icons/download.svg" />
-                            Pobierz
-                          </button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>12345</td>
-                        <td>Klient 4</td>
-                        <td>05-09-2022 17:28</td>
-                        <td>05-09-2022 17:32</td>
-                        <td>Katarzyna Kowalska</td>
-                        <td>3/3</td>
-                        <td>100%</td>
-                        <td>Nie</td>
-                        <td>
-                          <button
-                            type="button"
-                            class="btn text-primary btn-sm px-1 py-0"
-                          >
-                            <img src="Icons/download.svg" />
-                            Pobierz
-                          </button>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+              <h5 class="my-2">Lista</h5>
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr class="table-light text-secondary">
+                      <th>ID</th>
+                      <th>KLIENT</th>
+                      <th>DATA OD</th>
+                      <th>DATA DO</th>
+                      <th>UŻYTKOWNIK</th>
+                      <th>ETAP</th>
+                      <th>POSTĘP</th>
+                      <th>BŁĄD</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-primary">12</td>
+                      <td>Klient 1</td>
+                      <td>05-09-2022 17:28</td>
+                      <td>05-09-2022 17:32</td>
+                      <td>Jan Kowalski</td>
+                      <td>4/4</td>
+                      <td>100%</td>
+                      <td>Nie</td>
+                      <td>
+                        <button
+                          type="button"
+                          class="btn text-primary btn-sm px-1 py-0"
+                        >
+                          <img src="Icons/download.svg" />
+                          Pobierz
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-primary">123</td>
+                      <td>Klient 4</td>
+                      <td>05-09-2022 17:28</td>
+                      <td>05-09-2022 17:32</td>
+                      <td>Krystian Nowak</td>
+                      <td>3/3</td>
+                      <td>100%</td>
+                      <td>Nie</td>
+                      <td>
+                        <button
+                          type="button"
+                          class="btn text-primary btn-sm px-1 py-0"
+                        >
+                          <img src="Icons/download.svg" />
+                          Pobierz
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-primary">1234</td>
+                      <td>Klient 3</td>
+                      <td>05-09-2022 17:28</td>
+                      <td>05-09-2022 17:32</td>
+                      <td>Administrator</td>
+                      <td>4/4</td>
+                      <td>100%</td>
+                      <td>Nie</td>
+                      <td>
+                        <button
+                          type="button"
+                          class="btn text-primary btn-sm px-1 py-0"
+                        >
+                          <img src="Icons/download.svg" />
+                          Pobierz
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-primary">12345</td>
+                      <td>Klient 4</td>
+                      <td>05-09-2022 17:28</td>
+                      <td>05-09-2022 17:32</td>
+                      <td>Katarzyna Kowalska</td>
+                      <td>3/3</td>
+                      <td>100%</td>
+                      <td>Nie</td>
+                      <td>
+                        <button
+                          type="button"
+                          class="btn text-primary btn-sm px-1 py-0"
+                        >
+                          <img src="Icons/download.svg" />
+                          Pobierz
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
