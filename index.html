@@ -11,12 +11,6 @@
       crossorigin="anonymous"
     />
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
       body {
         background-color: #f2f4f6;
       }
@@ -43,23 +37,22 @@
         </div>
       </div>
 
-      <div class="accordion" id="accordionExample">
+      <div class="accordion" id="accordionPanelsStayOpenExample">
         <div class="accordion-item">
           <button
             class="accordion-button collapsed"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#collapseOne"
+            data-bs-target="#panelsStayOpen-collapseOne"
             aria-expanded="false"
-            aria-controls="collapseOne"
+            aria-controls="panelsStayOpen-collapseOne"
           >
             <h5>Informacje podstawowe</h5>
           </button>
 
           <div
-            id="collapseOne"
+            id="panelsStayOpen-collapseOne"
             class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
               <form>
@@ -90,7 +83,7 @@
                     <div class="row">
                       <div class="col-sm-12 col-md">
                         <div class="form-group py-2">
-                          <label class="mb-1" for="input3">Tekst</label>
+                          <label class="mb-1 star" for="input3">Tekst</label>
                           <input
                             type="text"
                             class="form-control"
@@ -131,30 +124,27 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="mt-3"></div>
+        <div class="mt-3"></div>
 
-      <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <button
             class="accordion-button collapsed"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#collapseTwo"
+            data-bs-target="#panelsStayOpen-collapseTwo"
             aria-expanded="false"
-            aria-controls="collapseTwo"
+            aria-controls="panelsStayOpen-collapseTwo"
           >
             <h5>Informacje szczegółowe</h5>
           </button>
 
           <div
-            id="collapseTwo"
+            id="panelsStayOpen-collapseTwo"
             class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <div>
+              <div class="py-2">
                 <button
                   type="button"
                   class="btn btn-primary btn-sm px-1 py-1"
@@ -192,7 +182,7 @@
                               <th>Nagłówek nr 2</th>
                               <th>Nagłówek nr 3</th>
                               <th>
-                                <img src="Icons/settings.svg" alt="" />
+                                <img src="Icons/settings.svg" alt="settings" />
                               </th>
                             </tr>
                           </thead>
@@ -253,16 +243,16 @@
                   </div>
                 </div>
                 <button type="button" class="btn text-primary btn-sm px-1 py-0">
-                  <img src="Icons/refresh-ccw.svg" />
+                  <img src="Icons/refresh-ccw.svg" alt="refresh" />
                   Aktualizuj
                 </button>
                 <button type="button" class="btn text-primary btn-sm px-1 py-0">
-                  <img src="Icons/copy.svg" />
+                  <img src="Icons/copy.svg" alt="copy" />
                   Kopiuj
                 </button>
 
                 <button type="button" class="btn text-primary btn-sm px-1 py-0">
-                  <img src="Icons/file-minus.svg" />
+                  <img src="Icons/file-minus.svg" alt="file-minus" />
                   Wyczyść
                 </button>
               </div>
@@ -303,7 +293,7 @@
 
                   <div class="col-md-4">
                     <div class="form-group py-2">
-                      <label class="mb-1 star" for="input1">Tekst</label>
+                      <label class="mb-1" for="input1">Tekst</label>
                       <input
                         type="text"
                         class="form-control"
@@ -369,7 +359,9 @@
                     value=""
                     id="check1"
                   />
-                  <label for="check1" class="form-check-label">Switch 1</label>
+                  <label for="check1" class="form-check-label">
+                    <h5>Switch 1</h5>
+                  </label>
                 </div>
                 <div class="form-check form-switch">
                   <input
@@ -378,7 +370,9 @@
                     value=""
                     id="check1"
                   />
-                  <label for="check1" class="form-check-label">Switch 2</label>
+                  <label for="check1" class="form-check-label">
+                    <h5>Switch 2</h5>
+                  </label>
                 </div>
                 <div class="form-check form-switch">
                   <input
@@ -387,7 +381,9 @@
                     value=""
                     id="check1"
                   />
-                  <label for="check1" class="form-check-label">Switch 3</label>
+                  <label for="check1" class="form-check-label">
+                    <h5>Switch 3</h5>
+                  </label>
                 </div>
               </div>
 
@@ -436,7 +432,7 @@
                           type="button"
                           class="btn text-primary btn-sm px-1 py-0"
                         >
-                          <img src="Icons/download.svg" />
+                          <img src="Icons/download.svg" alt="download" />
                           Pobierz
                         </button>
                       </td>
@@ -455,7 +451,7 @@
                           type="button"
                           class="btn text-primary btn-sm px-1 py-0"
                         >
-                          <img src="Icons/download.svg" />
+                          <img src="Icons/download.svg" alt="download" />
                           Pobierz
                         </button>
                       </td>
@@ -474,7 +470,7 @@
                           type="button"
                           class="btn text-primary btn-sm px-1 py-0"
                         >
-                          <img src="Icons/download.svg" />
+                          <img src="Icons/download.svg" alt="download" />
                           Pobierz
                         </button>
                       </td>
@@ -493,7 +489,7 @@
                           type="button"
                           class="btn text-primary btn-sm px-1 py-0"
                         >
-                          <img src="Icons/download.svg" />
+                          <img src="Icons/download.svg" alt="download" />
                           Pobierz
                         </button>
                       </td>
